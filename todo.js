@@ -1,13 +1,12 @@
-// Selecting elements
 var submit = document.getElementById("submit");
 var output = document.getElementById("output");
 
 function delItem(button) {
-  button.parentElement.parentElement.remove(); // Removes the parent <p> element containing the delete button
+  button.parentElement.parentElement.remove(); 
 }
 
 submit.addEventListener("click", function (event) {
-  event.preventDefault(); // Prevents the default form submission
+  event.preventDefault(); 
 
   // Selecting input elements
   var name = document.getElementById("name");
